@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+    <title>Faq Page</title>
+</head>
+
+<body class="page">
+    <header class="page__header header">
+        <div class="container header__container">
+            <div class="header__row">
+                <div class="header__col header__col--logo">
+                    <div class="logo">
+                        <a class="logo__link" href="#">
+                            <img class="logo__pic" src="./public/images/svg/logo-big.svg" alt="Логотип Qsoft">
+                        </a>
+                    </div>
+                </div>
+                <div class="header__col header__col--navbar">
+                    <ul class="navbar navbar--header">
+                        <li class="navbar__item navbar__item--header"><a class="link link--small" href="./index.html">Главная</a></li>
+                        <li class="navbar__item navbar__item--header"><a class="link link--small" href="./detail_page.html">Новости</a></li>
+                        <li class="navbar__item navbar__item--header"><a class="link link--small" href="./about_page.html">Редактировать профиль</a></li>
+                        <li class="navbar__item navbar__item--header"><a class="link link--small" href="./faq__page.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="header__col header__col--profile">
+                    <div class="header__profile profile">
+                        <a href="#" class="profile__link"></a>
+                        <div class="profile__wrapper">
+                            <span class="profile__name">Константин</span>
+                            <div class="profile__avatar">
+                                <img class="profile__avatar-pic" src="./public/images/profile-photo.png">
+                            </div>
+                        </div>
+
+                        <span class="profile__icon">
+                            <svg class="profile__icon-pic icon">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-profile"></use>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="page__content page__content--faq content">
+        <div class="container">
+            <div class="container__row">
+                <div class="container__col container__col--menu">
+                    <div class="menu">
+                        <button type="button" class="menu__button button">
+                            <span class="button__icon menu__button-image">
+                                <svg class="icon">
+                                    <use xlink:href="public/images/icons/sprite.svg#icon-menu"></use>
+                                </svg>
+                            </span>
+                            <span class="button__text menu__title">Меню раздела</span>
+                        </button>
+
+                        <nav class="menu__nav">
+                            <div class="menu__list">
+                                <div class="menu__list-header">
+                                    <span class="menu__list-header-title">Меню раздела</span>
+                                    <button type="button" class="button menu__list-header-button">
+                                        <span class="button__icon menu__list-header-button-image">
+                                            <svg class="icon icon--blue">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-cross"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                                <ul class="menu__list-container">
+                                    <li class="menu__list-item"><a class="menu__list-link" href="#">Избранное</a></li>
+                                    <li class="menu__list-item"><a class="menu__list-link" href="#">Моя компания</a>
+                                    </li>
+                                    <li class="menu__list-item"><a class="menu__list-link" href="#">Моё развитие</a>
+                                    </li>
+                                    <li class="menu__list-item"><a class="menu__list-link menu__list-link--active"
+                                            href="#">Новости компании</a></li>
+                                    <li class="menu__list-item"><a class="menu__list-link" href="#">Телефонная книга</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="container__col container__col--faq">
+                    <div class="faq">
+                        <div class="faq__row">
+                            <div class="faq__col faq__row--breadcrumbs">
+                                <nav class="breadcrumbs">
+                                    <ul class="breadcrumbs__list">
+                                        <li class="breadcrumbs__item">
+                                            <a href="#" class="breadcrumbs__link">Главная</a>
+                                        </li>
+                                        <li class="breadcrumbs__item">
+                                            <a href="#" class="breadcrumbs__link">Новости</a>
+                                        </li>
+                                        <li class="breadcrumbs__item">
+                                            <a class="breadcrumbs__link">Новость детально</a>
+                                        </li>
+                                        <li class="breadcrumbs__item breadcrumbs__item--active">
+                                            <a class="breadcrumbs__link">Крошки в две строки</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+
+                            <div class="faq__col faq__col--title">
+                                <h1 class="faq__title">FAQ</h1>
+                            </div>
+
+                            <div class="faq__col faq__col--accordeon-container">
+                                <main class="faq__box">
+                                    <div class="faq__box-accordeon">
+                                        <article class="faq__accordeon">
+                                            <h2 class="faq__subtitle">Регистрация</h2>
+                                            <div class="accordeon__container">
+                                                <div class="accordeon" data-accordeon-container>
+                                                    <div class="accordeon__item accordeon__item--opened" data-accordeon>
+                                                        <div class="accordeon__header" data-accordeon-toggle>
+                                                            <p class="accordeon__title">
+                                                                Обязательно ли регистрироваться на сайте, чтобы заказать
+                                                                продукцию?
+                                                            </p>
+                                                            <button type="button"
+                                                                class="accordeon__toggle button button--mini button--circular button--red">
+                                                                <span class="accordeon__toggle-icon button__icon">
+                                                                    <svg class="icon">
+                                                                        <use
+                                                                            xlink:href="public/images/icons/sprite.svg#icon-arrow-accordeon">
+                                                                        </use>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="accordeon__body accordeon__body--show"
+                                                            data-accordeon-content>
+                                                            Вы можете приобрести нашу продукцию через наших партнеров -
+                                                            консультантов в авторизованных дистрибьютерских центрах,
+                                                            либо
+                                                            зарегистрировавшись на нашем сайте. Дополнительно после
+                                                            регистрации Вы получите скидку на весь ассортимент товаров,
+                                                            а
+                                                            также доступ к специальным предложениям. Зарегистрируйтесь
+                                                            сейчас и экономьте на каждой покупке!
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordeon">
+                                                    <div class="accordeon__item" data-accordeon>
+                                                        <div class="accordeon__header" data-accordeon-toggle>
+                                                            <p class="accordeon__title">
+                                                                Взимается ли плата за регистрацию?
+                                                            </p>
+                                                            <button type="button"
+                                                                class="accordeon__toggle button button--mini button--circular button--red">
+                                                                <span class="accordeon__toggle-icon button__icon">
+                                                                    <svg class="icon">
+                                                                        <use
+                                                                            xlink:href="public/images/icons/sprite.svg#icon-arrow-accordeon">
+                                                                        </use>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="accordeon__body" data-accordeon-content>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Hic,
+                                                            earum commodi iusto deleniti neque fugiat qui ipsum eum
+                                                            voluptatibus est quisquam laudantium architecto sit unde
+                                                            quasi
+                                                            repellat soluta ut natus.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordeon">
+                                                    <div class="accordeon__item" data-accordeon>
+                                                        <div class="accordeon__header" data-accordeon-toggle>
+                                                            <p class="accordeon__title">
+                                                                Что такое логин?
+                                                            </p>
+                                                            <button type="button"
+                                                                class="accordeon__toggle button button--mini button--circular button--red">
+                                                                <span class="accordeon__toggle-icon button__icon">
+                                                                    <svg class="icon">
+                                                                        <use
+                                                                            xlink:href="public/images/icons/sprite.svg#icon-arrow-accordeon">
+                                                                        </use>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="accordeon__body" data-accordeon-content>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Hic,
+                                                            earum commodi iusto deleniti neque fugiat qui ipsum eum
+                                                            voluptatibus est quisquam laudantium architecto sit unde
+                                                            quasi
+                                                            repellat soluta ut natus.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordeon">
+                                                    <div class="accordeon__item" data-accordeon>
+                                                        <div class="accordeon__header" data-accordeon-toggle>
+                                                            <p class="accordeon__title">
+                                                                Может ли человек, не являющийся гражданином России,
+                                                                стать
+                                                                зарегистрированным Покупателем?
+                                                            </p>
+                                                            <button type="button"
+                                                                class="accordeon__toggle button button--mini button--circular button--red">
+                                                                <span class="accordeon__toggle-icon button__icon">
+                                                                    <svg class="icon">
+                                                                        <use
+                                                                            xlink:href="public/images/icons/sprite.svg#icon-arrow-accordeon">
+                                                                        </use>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="accordeon__body" data-accordeon-content>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Hic,
+                                                            earum commodi iusto deleniti neque fugiat qui ipsum eum
+                                                            voluptatibus est quisquam laudantium architecto sit unde
+                                                            quasi
+                                                            repellat soluta ut natus.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordeon">
+                                                    <div class="accordeon__item" data-accordeon>
+                                                        <div class="accordeon__header" data-accordeon-toggle>
+                                                            <p class="accordeon__title">
+                                                                Что делать, если при регистрации указал неверные данные?
+                                                            </p>
+                                                            <button type="button"
+                                                                class="accordeon__toggle button button--mini button--circular button--red">
+                                                                <span class="accordeon__toggle-icon button__icon">
+                                                                    <svg class="icon">
+                                                                        <use
+                                                                            xlink:href="public/images/icons/sprite.svg#icon-arrow-accordeon">
+                                                                        </use>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="accordeon__body" data-accordeon-content>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Hic,
+                                                            earum commodi iusto deleniti neque fugiat qui ipsum eum
+                                                            voluptatibus est quisquam laudantium architecto sit unde
+                                                            quasi
+                                                            repellat soluta ut natus.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordeon">
+                                                    <div class="accordeon__item" data-accordeon>
+                                                        <div class="accordeon__header" data-accordeon-toggle>
+                                                            <p class="accordeon__title">
+                                                                Как поменять пароль для входа в личный кабинет?
+                                                            </p>
+                                                            <button type="button"
+                                                                class="accordeon__toggle button button--mini button--circular button--red">
+                                                                <span class="accordeon__toggle-icon button__icon">
+                                                                    <svg class="icon">
+                                                                        <use
+                                                                            xlink:href="public/images/icons/sprite.svg#icon-arrow-accordeon">
+                                                                        </use>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="accordeon__body" data-accordeon-content>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Hic,
+                                                            earum commodi iusto deleniti neque fugiat qui ipsum eum
+                                                            voluptatibus est quisquam laudantium architecto sit unde
+                                                            quasi
+                                                            repellat soluta ut natus.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </article>
+
+                                        <article class="faq__accordeon">
+                                            <h2 class="faq__subtitle">Личный кабинет</h2>
+
+                                            <div class="accordeon">
+                                                <div class="accordeon__item" data-accordeon>
+                                                    <div class="accordeon__header" data-accordeon-toggle>
+                                                        <p class="accordeon__title">
+                                                            Что делать, если я забыл свой пароль от личного кабинета?
+                                                        </p>
+                                                        <button type="button"
+                                                            class="accordeon__toggle button button--mini button--circular button--red">
+                                                            <span class="accordeon__toggle-icon button__icon">
+                                                                <svg class="icon">
+                                                                    <use
+                                                                        xlink:href="public/images/icons/sprite.svg#icon-arrow-accordeon">
+                                                                    </use>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="accordeon__body" data-accordeon-content>
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+                                                        earum
+                                                        commodi iusto deleniti neque fugiat qui ipsum eum voluptatibus
+                                                        est
+                                                        quisquam laudantium architecto sit unde quasi repellat soluta ut
+                                                        natus.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordeon">
+                                                <div class="accordeon__item" data-accordeon>
+                                                    <div class="accordeon__header" data-accordeon-toggle>
+                                                        <p class="accordeon__title">
+                                                            Где я могу добавить/изменить электронный адрес (email)?
+                                                        </p>
+                                                        <button type="button"
+                                                            class="accordeon__toggle button button--mini button--circular button--red">
+                                                            <span class="accordeon__toggle-icon button__icon">
+                                                                <svg class="icon">
+                                                                    <use
+                                                                        xlink:href="public/images/icons/sprite.svg#icon-arrow-accordeon">
+                                                                    </use>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="accordeon__body" data-accordeon-content>
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+                                                        earum
+                                                        commodi iusto deleniti neque fugiat qui ipsum eum voluptatibus
+                                                        est
+                                                        quisquam laudantium architecto sit unde quasi repellat soluta ut
+                                                        natus.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordeon">
+                                                <div class="accordeon__item" data-accordeon>
+                                                    <div class="accordeon__header" data-accordeon-toggle>
+                                                        <p class="accordeon__title">
+                                                            Где я могу добавить/изменить номер телефона?
+                                                        </p>
+                                                        <button type="button"
+                                                            class="accordeon__toggle button button--mini button--circular button--red">
+                                                            <span class="accordeon__toggle-icon button__icon">
+                                                                <svg class="icon">
+                                                                    <use
+                                                                        xlink:href="public/images/icons/sprite.svg#icon-arrow-accordeon">
+                                                                    </use>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="accordeon__body" data-accordeon-content>
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+                                                        earum
+                                                        commodi iusto deleniti neque fugiat qui ipsum eum voluptatibus
+                                                        est
+                                                        quisquam laudantium architecto sit unde quasi repellat soluta ut
+                                                        natus.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordeon">
+                                                <div class="accordeon__item" data-accordeon>
+                                                    <div class="accordeon__header" data-accordeon-toggle>
+                                                        <p class="accordeon__title">
+                                                            Каким образом я могу изменить свои персональные данные в
+                                                            личном
+                                                            кабинете?
+                                                        </p>
+                                                        <button type="button"
+                                                            class="accordeon__toggle button button--mini button--circular button--red">
+                                                            <span class="accordeon__toggle-icon button__icon">
+                                                                <svg class="icon">
+                                                                    <use
+                                                                        xlink:href="public/images/icons/sprite.svg#icon-arrow-accordeon">
+                                                                    </use>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="accordeon__body" data-accordeon-content>
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+                                                        earum
+                                                        commodi iusto deleniti neque fugiat qui ipsum eum voluptatibus
+                                                        est
+                                                        quisquam laudantium architecto sit unde quasi repellat soluta ut
+                                                        natus.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <button type="button" class="faq__button button button--covered button--blue">
+                                            <span class="button__text">Обратиться в техподдержку</span>
+                                        </button>
+                                    </div>
+                                </main>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rewiews">
+            <div class="rewiews__slider slider">
+                <div class="slider__box" data-carousel="infinity">
+                    <div class="swiper-container" data-carousel-container>
+                        <ul class="rewiews__list swiper-wrapper">
+                            <li class="rewiews__item swiper-slide">
+                                <article class="rewiew rewiew--slide">
+                                    <div class="rewiew__header">
+                                        <div class="rewiew__header-box">
+                                            <img class="rewiew__header-img" src="./public/images/emodji.png"
+                                                alt="Эмоджи">
+                                            <span class="rewiew__header-name" id="slider-name">Паулина Ивановна</span>
+                                        </div>
+                                        <div class="date">
+                                            <time class="date__number rewiew__header-number"
+                                                datetime="2020-02-04">04.02.2020</time>
+                                        </div>
+                                    </div>
+                                    <div class="rewiew__main">Вы можете приобрести нашу продукцию через наших партнеров
+                                        -
+                                        консультантов в авторизованных дистрибьютерских центрах, либо
+                                        зарегистрировавшись на
+                                        нашем сайте. Дополнительно после регистрации Вы получите скидку на весь
+                                        ассортимент
+                                        товаров, а также доступ к специальным предложениям...</div>
+                                    <div class="rewiew__footer">
+                                        <img class="rewiew__footer-img" src="./public/images/magnit.png" alt="Магнит">
+                                    </div>
+                                </article>
+                            </li>
+
+                            <li class="rewiews__item swiper-slide">
+                                <article class="rewiew rewiew--slide">
+                                    <div class="rewiew__header">
+                                        <div class="rewiew__header-box">
+                                            <img class="rewiew__header-img" src="./public/images/emodji.png"
+                                                alt="Эмоджи">
+                                            <span class="rewiew__header-name">мама Оля</span>
+                                        </div>
+                                        <div class="date">
+                                            <time class="date__number rewiew__header-number"
+                                                datetime="2020-02-04">04.02.2020</time>
+                                        </div>
+                                    </div>
+                                    <div class="rewiew__main">Вы можете приобрести нашу продукцию через наших партнеров
+                                        -
+                                        консультантов в авторизованных дистрибьютерских центрах, либо
+                                        зарегистрировавшись на
+                                        нашем сайте. Дополнительно после регистрации Вы получите скидку на весь
+                                        ассортимент
+                                        товаров, а также доступ к специальным предложениям.</div>
+                                    <div class="rewiew__footer">
+                                        <img class="rewiew__footer-img" src="./public/images/magnit.png" alt="Магнит">
+                                    </div>
+                                </article>
+                            </li>
+
+
+                            <li class="rewiews__item swiper-slide">
+                                <article class="rewiew rewiew--slide">
+                                    <div class="rewiew__header">
+                                        <div class="rewiew__header-box">
+                                            <img class="rewiew__header-img" src="./public/images/emodji.png"
+                                                alt="Эмоджи">
+                                            <span class="rewiew__header-name">Анна</span>
+                                        </div>
+                                        <div class="date">
+                                            <time class="date__number rewiew__header-number"
+                                                datetime="2020-02-04">04.02.2020</time>
+                                        </div>
+                                    </div>
+                                    <div class="rewiew__main">Вы можете приобрести нашу продукцию через наших партнеров
+                                        -
+                                        консультантов в авторизованных дистрибьютерских центрах, либо
+                                        зарегистрировавшись на
+                                        нашем сайте. Дополнительно после регистрации Вы получите скидку на весь
+                                        ассортимент
+                                        товаров, а также доступ к специальным предложениям...</div>
+                                    <div class="rewiew__footer">
+                                        <img class="rewiew__footer-img" src="./public/images/magnit.png" alt="Магнит">
+                                    </div>
+                                </article>
+                            </li>
+
+                            <li class="rewiews__item swiper-slide">
+                                <article class="rewiew rewiew--slide">
+                                    <div class="rewiew__header">
+                                        <div class="rewiew__header-box">
+                                            <img class="rewiew__header-img" src="./public/images/emodji.png"
+                                                alt="Эмоджи">
+                                            <span class="rewiew__header-name">Александра</span>
+                                        </div>
+                                        <div class="date">
+                                            <time class="date__number rewiew__header-number"
+                                                datetime="2020-02-04">04.02.2020</time>
+                                        </div>
+                                    </div>
+                                    <div class="rewiew__main">Вы можете приобрести нашу продукцию через наших партнеров
+                                        -
+                                        консультантов в авторизованных дистрибьютерских центрах, либо
+                                        зарегистрировавшись на
+                                        нашем сайте. Дополнительно после регистрации Вы получите скидку на весь
+                                        ассортимент
+                                        товаров, а также доступ к специальным предложениям...</div>
+                                    <div class="rewiew__footer">
+                                        <img class="rewiew__footer-img" src="./public/images/magnit.png" alt="Магнит">
+                                    </div>
+                                </article>
+                            </li>
+
+                            <li class="rewiews__item swiper-slide">
+                                <article class="rewiew rewiew--slide">
+                                    <div class="rewiew__header">
+                                        <div class="rewiew__header-box">
+                                            <img class="rewiew__header-img" src="./public/images/emodji.png"
+                                                alt="Эмоджи">
+                                            <span class="rewiew__header-name">Паулина Ивановна</span>
+                                        </div>
+                                        <div class="date">
+                                            <time class="date__number rewiew__header-number"
+                                                datetime="2020-02-04">04.02.2020</time>
+                                        </div>
+                                    </div>
+                                    <div class="rewiew__main">Вы можете приобрести нашу продукцию через наших партнеров
+                                        -
+                                        консультантов в авторизованных дистрибьютерских центрах, либо
+                                        зарегистрировавшись на
+                                        нашем сайте. Дополнительно после регистрации Вы получите скидку на весь
+                                        ассортимент
+                                        товаров, а также доступ к специальным предложениям...</div>
+                                    <div class="rewiew__footer">
+                                        <img class="rewiew__footer-img" src="./public/images/magnit.png" alt="Магнит">
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+
+                        <div class="slider__buttons">
+                            <div class="slider__buttons-item swiper-button-prev" data-carousel-prev>
+                                <button type="button" class="slider__button slider__button--prev button--circle">
+                                    <svg class="slider__button-icon icon">
+                                        <use xlink:href="/public/images/icons/sprite.svg#icon-arrow-slider"></use>
+                                    </svg>
+
+                                </button>
+                            </div>
+
+
+                            <div class="slider__buttons-item swiper-button-next" data-carousel-next>
+                                <button type="button" class="slider__button slider__button--next button--circle">
+                                    <svg class="slider__button-icon icon">
+                                        <use xlink:href="/public/images/icons/sprite.svg#icon-arrow-slider"></use>
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page__footer footer">
+        <div class="container footer__container">
+            <div class="footer__row">
+                <div class="footer__col footer__col--wrapper">
+                    <div class="footer__row">
+                        <div class="footer__col footer__col--social">
+                            <div class="social">
+                                <div class="social__container">
+                                    <a class="social__icon social__icon--youtube" href="#">
+                                        <svg class="icon social__icon--pic">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-youTube"></use>
+                                        </svg>
+                                    </a>
+                                    <a class="social__icon social__icon--insta" href="#">
+                                        <svg class="icon social__icon--pic">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-insta"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__col footer__col--navbar">
+                            <ul class="navbar">
+                                <li class="navbar__item"><a class="link" href="#">Правила</a></li>
+                                <li class="navbar__item"><a class="link" href="#">Документы</a></li>
+                                <li class="navbar__item"><a class="link" href="#">Политика&nbsp;конфиденциальности</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__col footer__col--logo">
+                    <div class="logo">
+                        <a class="logo__link" href="#">
+                            <svg class="footer__logo-link--pic logo__link--pic">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-logo-mini"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./public/js/script.js"></script>
+</body>
+
+</html>
