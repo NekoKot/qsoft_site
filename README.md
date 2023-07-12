@@ -1,6 +1,5 @@
 # qsoft_site
 
-### Сайт под CMS  
+Сайт под CMS  
 
-# Live demo
-:link:[qsoft](https://nekokot.github.io/qsoft_site/index.html)
+:link:[live demo](https://nekokot.github.io/qsoft_site/index.html)
